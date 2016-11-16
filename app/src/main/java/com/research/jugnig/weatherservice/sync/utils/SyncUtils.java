@@ -36,7 +36,7 @@ import com.research.jugnig.weatherservice.sync.feed.FeedContract;
  * Static helper methods for working with the sync framework.
  */
 public class SyncUtils {
-    private static final long SYNC_FREQUENCY = 6 * 6;  // 1 hour 60x60 (in seconds)
+    private static final long SYNC_FREQUENCY = 60 * 60;  // 1 hour 60x60 (in seconds)
     private static final String CONTENT_AUTHORITY = FeedContract.CONTENT_AUTHORITY;
     private static final String PREF_SETUP_COMPLETE = "setup_complete";
 
