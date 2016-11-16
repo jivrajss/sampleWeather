@@ -86,7 +86,7 @@ public class SyncAdapter extends AbstractThreadedSyncAdapter {
     private void updateWeather(Realm mRealm) {
         String temp = "";
         try {
-            Log.d(TAG, "Hitting SelfInfo api/user");
+            Log.d(TAG, "Hitting api/weather");
             WeatherResponse response = new Retrofit.Builder().client(mOkHttpClient)
                     .addConverterFactory(GsonConverterFactory.create()).
                             baseUrl(ApiService.BASE_URL).
